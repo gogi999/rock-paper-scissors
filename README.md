@@ -38,6 +38,7 @@ The system maintains the state of the score after refreshing the browser. Local 
 - react-scripts
 - redux
 - redux-devtools-extension
+- sass
 - styled-components
 - web-vitals
 
