@@ -21,7 +21,7 @@ The system maintains the state of the score after refreshing the browser. Local 
 # Technologies Built With:
 
 - HTML
-- CSS
+- SASS
 - JS
 - React JS
 - Redux
@@ -29,7 +29,6 @@ The system maintains the state of the score after refreshing the browser. Local 
 
 # List of all libraries: 
 
-- @reduxjs/toolkit
 - @testing-library/jest-dom
 - @testing-library/react
 - @testing-library/user-event
@@ -39,7 +38,6 @@ The system maintains the state of the score after refreshing the browser. Local 
 - react-scripts
 - redux
 - redux-devtools-extension
-- redux-persist
 - styled-components
 - web-vitals
 

@@ -1,0 +1,134 @@
+@import 'modal';
+@import 'colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+html {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: $background-color;
+  color: white;
+  height: 100vh;
+}
+
+.option-border {
+  margin: 1.5em;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  padding: 1.2em;
+  position: relative;
+}
+.option-border:hover {
+  cursor: pointer;
+}
+.option-border:active {
+  opacity: 0.8;
+}
+
+.option {
+  background: white;
+  color: black;
+  padding: 3.3em;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.option-text-p {
+  margin-top: 0;
+  margin-left: 5px;
+}
+.option-text-r {
+  margin-top: 0;
+  margin-left: 8px;
+}
+.option-text-s {
+  margin-top: 0;
+  margin-left: -6px;
+}
+
+.rock {
+  background: $rock-gradient;
+}
+.paper {
+  background: $paper-gradient;
+}
+
+.scissors {
+  background: $scissors-gradient;
+}
+
+.winner-desktop {
+  text-align: center;
+  margin: 15px;
+}
+.winner-mobile {
+  text-align: center;
+  margin: 15px;
+  display: none;
+}
+
+.triangle-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  align-self: flex-end;
+  margin: 10px 40px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.button {
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 10px;
+  letter-spacing: 4px;
+  padding: 0px 30px;
+  margin: 15px 0px;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: rgb(150, 4, 28);
+  border: 2px solid rgba(255, 255, 255, 0.66);
+}
+
+.play-again {
+  background: white;
+  color: $score-color;
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 1em;
+  }
+  .option {
+    padding: 1.1em;
+  }
+  .option-border {
+    margin: 1em;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .triangle {
+    width: 70%;
+  }
+  .winner-desktop {
+    display: none;
+  }
+  .winner-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 850px) {
+  .button-container {
+    align-self: center;
+    position: relative;
+  }
+}

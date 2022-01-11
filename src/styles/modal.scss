@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+@import 'colors';
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 23px;
+}
+
+.rules-modal {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.rules-modal > img {
+  padding: 50px 20px 10px 20px;
+}
+
+.rules-text {
+  margin-left: 23px;
+  margin-top: 45px;
+  font-size: 33px;
+}
+
+.close-icon {
+  display: block;
+}
+
+.close-icon-mobile {
+  display: none;
+}
+@media (max-width: 450px) {
+  .rules-modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .close-icon {
+    display: none;
+  }
+  .close-icon-mobile {
+    display: block;
+  }
+}
+
+@keyframes fadeInModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
